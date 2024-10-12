@@ -1,337 +1,241 @@
-"Purpose","Regions","year","trips"
-"Hotels and similar","capital","2001",10117
-"Hotels and similar","capital","2002",10059
-"Hotels and similar","capital","2003",9883
-"Hotels and similar","capital","2004",10833
-"Hotels and similar","capital","2005",10924
-"Hotels and similar","capital","2006",11145
-"Hotels and similar","capital","2007",11433
-"Hotels and similar","capital","2008",11744
-"Hotels and similar","capital","2009",11510
-"Hotels and similar","capital","2010",11514
-"Hotels and similar","capital","2011",12254
-"Hotels and similar","capital","2012",12379
-"Hotels and similar","capital","2013",12738
-"Hotels and similar","capital","2014",13674
-"Hotels and similar","capital","2015",13972
-"Hotels and similar","capital","2016",14241
-"Hotels and similar","capital","2017",15128
-"Hotels and similar","capital","2018",16727
-"Hotels and similar","capital","2019",18412
-"Hotels and similar","capital","2020",13749
-"Hotels and similar","capital","2021",8066
-"Hotels and similar","capital","2022",9744
-"Hotels and similar","capital","2023",18277
-"Hotels and similar","capital","2024",19457
-"Hotels and similar","regional","2001",14609
-"Hotels and similar","regional","2002",15147
-"Hotels and similar","regional","2003",15596
-"Hotels and similar","regional","2004",15324
-"Hotels and similar","regional","2005",15862
-"Hotels and similar","regional","2006",15360
-"Hotels and similar","regional","2007",15526
-"Hotels and similar","regional","2008",15716
-"Hotels and similar","regional","2009",14262
-"Hotels and similar","regional","2010",14325
-"Hotels and similar","regional","2011",14493
-"Hotels and similar","regional","2012",14888
-"Hotels and similar","regional","2013",14880
-"Hotels and similar","regional","2014",15016
-"Hotels and similar","regional","2015",16101
-"Hotels and similar","regional","2016",16681
-"Hotels and similar","regional","2017",17663
-"Hotels and similar","regional","2018",18486
-"Hotels and similar","regional","2019",20116
-"Hotels and similar","regional","2020",15451
-"Hotels and similar","regional","2021",16807
-"Hotels and similar","regional","2022",16000
-"Hotels and similar","regional","2023",22546
-"Hotels and similar","regional","2024",22988
-"Guest house or Bed & Breakfast","capital","2001",205
-"Guest house or Bed & Breakfast","capital","2002",228
-"Guest house or Bed & Breakfast","capital","2003",181
-"Guest house or Bed & Breakfast","capital","2004",178
-"Guest house or Bed & Breakfast","capital","2005",232
-"Guest house or Bed & Breakfast","capital","2006",199
-"Guest house or Bed & Breakfast","capital","2007",193
-"Guest house or Bed & Breakfast","capital","2008",178
-"Guest house or Bed & Breakfast","capital","2009",195
-"Guest house or Bed & Breakfast","capital","2010",191
-"Guest house or Bed & Breakfast","capital","2011",209
-"Guest house or Bed & Breakfast","capital","2012",204
-"Guest house or Bed & Breakfast","capital","2013",199
-"Guest house or Bed & Breakfast","capital","2014",162
-"Guest house or Bed & Breakfast","capital","2015",235
-"Guest house or Bed & Breakfast","capital","2016",262
-"Guest house or Bed & Breakfast","capital","2017",309
-"Guest house or Bed & Breakfast","capital","2018",411
-"Guest house or Bed & Breakfast","capital","2019",400
-"Guest house or Bed & Breakfast","capital","2020",256
-"Guest house or Bed & Breakfast","capital","2021",135
-"Guest house or Bed & Breakfast","capital","2022",184
-"Guest house or Bed & Breakfast","capital","2023",254
-"Guest house or Bed & Breakfast","capital","2024",226
-"Guest house or Bed & Breakfast","regional","2001",1284
-"Guest house or Bed & Breakfast","regional","2002",1375
-"Guest house or Bed & Breakfast","regional","2003",1184
-"Guest house or Bed & Breakfast","regional","2004",1018
-"Guest house or Bed & Breakfast","regional","2005",979
-"Guest house or Bed & Breakfast","regional","2006",946
-"Guest house or Bed & Breakfast","regional","2007",1071
-"Guest house or Bed & Breakfast","regional","2008",1030
-"Guest house or Bed & Breakfast","regional","2009",988
-"Guest house or Bed & Breakfast","regional","2010",980
-"Guest house or Bed & Breakfast","regional","2011",919
-"Guest house or Bed & Breakfast","regional","2012",926
-"Guest house or Bed & Breakfast","regional","2013",904
-"Guest house or Bed & Breakfast","regional","2014",981
-"Guest house or Bed & Breakfast","regional","2015",946
-"Guest house or Bed & Breakfast","regional","2016",981
-"Guest house or Bed & Breakfast","regional","2017",1196
-"Guest house or Bed & Breakfast","regional","2018",1301
-"Guest house or Bed & Breakfast","regional","2019",1184
-"Guest house or Bed & Breakfast","regional","2020",851
-"Guest house or Bed & Breakfast","regional","2021",999
-"Guest house or Bed & Breakfast","regional","2022",877
-"Guest house or Bed & Breakfast","regional","2023",873
-"Guest house or Bed & Breakfast","regional","2024",653
-"Rented accommodation","capital","2001",1095
-"Rented accommodation","capital","2002",1160
-"Rented accommodation","capital","2003",1218
-"Rented accommodation","capital","2004",786
-"Rented accommodation","capital","2005",656
-"Rented accommodation","capital","2006",861
-"Rented accommodation","capital","2007",760
-"Rented accommodation","capital","2008",1082
-"Rented accommodation","capital","2009",1103
-"Rented accommodation","capital","2010",1064
-"Rented accommodation","capital","2011",989
-"Rented accommodation","capital","2012",1060
-"Rented accommodation","capital","2013",1196
-"Rented accommodation","capital","2014",1008
-"Rented accommodation","capital","2015",1106
-"Rented accommodation","capital","2016",1429
-"Rented accommodation","capital","2017",1524
-"Rented accommodation","capital","2018",2078
-"Rented accommodation","capital","2019",2538
-"Rented accommodation","capital","2020",1900
-"Rented accommodation","capital","2021",1356
-"Rented accommodation","capital","2022",1445
-"Rented accommodation","capital","2023",2167
-"Rented accommodation","capital","2024",2385
-"Rented accommodation","regional","2001",4417
-"Rented accommodation","regional","2002",4840
-"Rented accommodation","regional","2003",4838
-"Rented accommodation","regional","2004",4225
-"Rented accommodation","regional","2005",4379
-"Rented accommodation","regional","2006",4023
-"Rented accommodation","regional","2007",4666
-"Rented accommodation","regional","2008",4643
-"Rented accommodation","regional","2009",4699
-"Rented accommodation","regional","2010",4851
-"Rented accommodation","regional","2011",4786
-"Rented accommodation","regional","2012",4890
-"Rented accommodation","regional","2013",5063
-"Rented accommodation","regional","2014",5039
-"Rented accommodation","regional","2015",4778
-"Rented accommodation","regional","2016",5312
-"Rented accommodation","regional","2017",5432
-"Rented accommodation","regional","2018",6096
-"Rented accommodation","regional","2019",7116
-"Rented accommodation","regional","2020",5083
-"Rented accommodation","regional","2021",7210
-"Rented accommodation","regional","2022",6394
-"Rented accommodation","regional","2023",7221
-"Rented accommodation","regional","2024",7820
-"Caravan_commercial camping","capital","2001",634
-"Caravan_commercial camping","capital","2002",602
-"Caravan_commercial camping","capital","2003",580
-"Caravan_commercial camping","capital","2004",574
-"Caravan_commercial camping","capital","2005",518
-"Caravan_commercial camping","capital","2006",541
-"Caravan_commercial camping","capital","2007",606
-"Caravan_commercial camping","capital","2008",579
-"Caravan_commercial camping","capital","2009",523
-"Caravan_commercial camping","capital","2010",562
-"Caravan_commercial camping","capital","2011",584
-"Caravan_commercial camping","capital","2012",527
-"Caravan_commercial camping","capital","2013",580
-"Caravan_commercial camping","capital","2014",637
-"Caravan_commercial camping","capital","2015",594
-"Caravan_commercial camping","capital","2016",582
-"Caravan_commercial camping","capital","2017",660
-"Caravan_commercial camping","capital","2018",653
-"Caravan_commercial camping","capital","2019",655
-"Caravan_commercial camping","capital","2020",566
-"Caravan_commercial camping","capital","2021",499
-"Caravan_commercial camping","capital","2022",643
-"Caravan_commercial camping","capital","2023",921
-"Caravan_commercial camping","capital","2024",804
-"Caravan_commercial camping","regional","2001",5364
-"Caravan_commercial camping","regional","2002",5318
-"Caravan_commercial camping","regional","2003",5390
-"Caravan_commercial camping","regional","2004",5408
-"Caravan_commercial camping","regional","2005",4718
-"Caravan_commercial camping","regional","2006",4481
-"Caravan_commercial camping","regional","2007",5130
-"Caravan_commercial camping","regional","2008",5012
-"Caravan_commercial camping","regional","2009",4865
-"Caravan_commercial camping","regional","2010",5261
-"Caravan_commercial camping","regional","2011",5273
-"Caravan_commercial camping","regional","2012",5347
-"Caravan_commercial camping","regional","2013",5706
-"Caravan_commercial camping","regional","2014",5750
-"Caravan_commercial camping","regional","2015",6150
-"Caravan_commercial camping","regional","2016",6393
-"Caravan_commercial camping","regional","2017",5940
-"Caravan_commercial camping","regional","2018",6150
-"Caravan_commercial camping","regional","2019",6599
-"Caravan_commercial camping","regional","2020",5308
-"Caravan_commercial camping","regional","2021",6754
-"Caravan_commercial camping","regional","2022",6229
-"Caravan_commercial camping","regional","2023",7988
-"Caravan_commercial camping","regional","2024",7684
-"Own property","capital","2001",614
-"Own property","capital","2002",553
-"Own property","capital","2003",446
-"Own property","capital","2004",366
-"Own property","capital","2005",469
-"Own property","capital","2006",414
-"Own property","capital","2007",360
-"Own property","capital","2008",340
-"Own property","capital","2009",447
-"Own property","capital","2010",267
-"Own property","capital","2011",271
-"Own property","capital","2012",295
-"Own property","capital","2013",413
-"Own property","capital","2014",349
-"Own property","capital","2015",433
-"Own property","capital","2016",390
-"Own property","capital","2017",478
-"Own property","capital","2018",589
-"Own property","capital","2019",855
-"Own property","capital","2020",724
-"Own property","capital","2021",711
-"Own property","capital","2022",634
-"Own property","capital","2023",604
-"Own property","capital","2024",771
-"Own property","regional","2001",3059
-"Own property","regional","2002",2911
-"Own property","regional","2003",2539
-"Own property","regional","2004",2386
-"Own property","regional","2005",2222
-"Own property","regional","2006",2595
-"Own property","regional","2007",2225
-"Own property","regional","2008",2415
-"Own property","regional","2009",2063
-"Own property","regional","2010",1931
-"Own property","regional","2011",2331
-"Own property","regional","2012",2460
-"Own property","regional","2013",2613
-"Own property","regional","2014",2736
-"Own property","regional","2015",2569
-"Own property","regional","2016",2951
-"Own property","regional","2017",2892
-"Own property","regional","2018",3302
-"Own property","regional","2019",3884
-"Own property","regional","2020",3617
-"Own property","regional","2021",3662
-"Own property","regional","2022",3223
-"Own property","regional","2023",3189
-"Own property","regional","2024",3771
-"Friends or relatives property","capital","2001",13220
-"Friends or relatives property","capital","2002",13326
-"Friends or relatives property","capital","2003",13560
-"Friends or relatives property","capital","2004",13482
-"Friends or relatives property","capital","2005",12524
-"Friends or relatives property","capital","2006",12591
-"Friends or relatives property","capital","2007",12351
-"Friends or relatives property","capital","2008",12343
-"Friends or relatives property","capital","2009",11545
-"Friends or relatives property","capital","2010",10757
-"Friends or relatives property","capital","2011",12123
-"Friends or relatives property","capital","2012",11960
-"Friends or relatives property","capital","2013",12370
-"Friends or relatives property","capital","2014",13826
-"Friends or relatives property","capital","2015",14151
-"Friends or relatives property","capital","2016",15012
-"Friends or relatives property","capital","2017",15291
-"Friends or relatives property","capital","2018",16210
-"Friends or relatives property","capital","2019",17812
-"Friends or relatives property","capital","2020",14865
-"Friends or relatives property","capital","2021",11977
-"Friends or relatives property","capital","2022",11553
-"Friends or relatives property","capital","2023",15876
-"Friends or relatives property","capital","2024",16675
-"Friends or relatives property","regional","2001",19413
-"Friends or relatives property","regional","2002",19813
-"Friends or relatives property","regional","2003",20967
-"Friends or relatives property","regional","2004",21190
-"Friends or relatives property","regional","2005",19664
-"Friends or relatives property","regional","2006",18580
-"Friends or relatives property","regional","2007",18879
-"Friends or relatives property","regional","2008",18750
-"Friends or relatives property","regional","2009",16774
-"Friends or relatives property","regional","2010",16756
-"Friends or relatives property","regional","2011",17268
-"Friends or relatives property","regional","2012",18544
-"Friends or relatives property","regional","2013",18504
-"Friends or relatives property","regional","2014",19752
-"Friends or relatives property","regional","2015",21267
-"Friends or relatives property","regional","2016",21323
-"Friends or relatives property","regional","2017",22981
-"Friends or relatives property","regional","2018",24524
-"Friends or relatives property","regional","2019",27289
-"Friends or relatives property","regional","2020",22804
-"Friends or relatives property","regional","2021",21976
-"Friends or relatives property","regional","2022",20498
-"Friends or relatives property","regional","2023",25395
-"Friends or relatives property","regional","2024",26386
-"other","capital","2001",1807
-"other","capital","2002",1599
-"other","capital","2003",1750
-"other","capital","2004",1579
-"other","capital","2005",1222
-"other","capital","2006",1812
-"other","capital","2007",1816
-"other","capital","2008",1468
-"other","capital","2009",1402
-"other","capital","2010",1515
-"other","capital","2011",1365
-"other","capital","2012",1601
-"other","capital","2013",1510
-"other","capital","2014",1873
-"other","capital","2015",2329
-"other","capital","2016",2368
-"other","capital","2017",2452
-"other","capital","2018",2620
-"other","capital","2019",3298
-"other","capital","2020",3218
-"other","capital","2021",2564
-"other","capital","2022",2981
-"other","capital","2023",3091
-"other","capital","2024",2380
-"other","regional","2001",5200
-"other","regional","2002",5254
-"other","regional","2003",5310
-"other","regional","2004",5490
-"other","regional","2005",5096
-"other","regional","2006",5407
-"other","regional","2007",5307
-"other","regional","2008",4827
-"other","regional","2009",4482
-"other","regional","2010",4682
-"other","regional","2011",4603
-"other","regional","2012",5462
-"other","regional","2013",5636
-"other","regional","2014",6979
-"other","regional","2015",8417
-"other","regional","2016",9306
-"other","regional","2017",9859
-"other","regional","2018",10932
-"other","regional","2019",12717
-"other","regional","2020",11791
-"other","regional","2021",12876
-"other","regional","2022",13430
-"other","regional","2023",13448
-"other","regional","2024",11384
+"Regions","year","purpose","trips"
+"capital","2001","Hotels and similar",10117
+"capital","2001","Rented accommodation",1095
+"capital","2001","Caravan_commercial camping",634
+"capital","2001","Friends or relatives property",13220
+"capital","2001","other",2626
+"capital","2002","Hotels and similar",10059
+"capital","2002","Rented accommodation",1160
+"capital","2002","Caravan_commercial camping",602
+"capital","2002","Friends or relatives property",13326
+"capital","2002","other",2380
+"capital","2003","Hotels and similar",9883
+"capital","2003","Rented accommodation",1218
+"capital","2003","Caravan_commercial camping",580
+"capital","2003","Friends or relatives property",13560
+"capital","2003","other",2377
+"capital","2004","Hotels and similar",10833
+"capital","2004","Rented accommodation",786
+"capital","2004","Caravan_commercial camping",574
+"capital","2004","Friends or relatives property",13482
+"capital","2004","other",2123
+"capital","2005","Hotels and similar",10924
+"capital","2005","Rented accommodation",656
+"capital","2005","Caravan_commercial camping",518
+"capital","2005","Friends or relatives property",12524
+"capital","2005","other",1923
+"capital","2006","Hotels and similar",11145
+"capital","2006","Rented accommodation",861
+"capital","2006","Caravan_commercial camping",541
+"capital","2006","Friends or relatives property",12591
+"capital","2006","other",2425
+"capital","2007","Hotels and similar",11433
+"capital","2007","Rented accommodation",760
+"capital","2007","Caravan_commercial camping",606
+"capital","2007","Friends or relatives property",12351
+"capital","2007","other",2369
+"capital","2008","Hotels and similar",11744
+"capital","2008","Rented accommodation",1082
+"capital","2008","Caravan_commercial camping",579
+"capital","2008","Friends or relatives property",12343
+"capital","2008","other",1986
+"capital","2009","Hotels and similar",11510
+"capital","2009","Rented accommodation",1103
+"capital","2009","Caravan_commercial camping",523
+"capital","2009","Friends or relatives property",11545
+"capital","2009","other",2044
+"capital","2010","Hotels and similar",11514
+"capital","2010","Rented accommodation",1064
+"capital","2010","Caravan_commercial camping",562
+"capital","2010","Friends or relatives property",10757
+"capital","2010","other",1973
+"capital","2011","Hotels and similar",12254
+"capital","2011","Rented accommodation",989
+"capital","2011","Caravan_commercial camping",584
+"capital","2011","Friends or relatives property",12123
+"capital","2011","other",1845
+"capital","2012","Hotels and similar",12379
+"capital","2012","Rented accommodation",1060
+"capital","2012","Caravan_commercial camping",527
+"capital","2012","Friends or relatives property",11960
+"capital","2012","other",2100
+"capital","2013","Hotels and similar",12738
+"capital","2013","Rented accommodation",1196
+"capital","2013","Caravan_commercial camping",580
+"capital","2013","Friends or relatives property",12370
+"capital","2013","other",2122
+"capital","2014","Hotels and similar",13674
+"capital","2014","Rented accommodation",1008
+"capital","2014","Caravan_commercial camping",637
+"capital","2014","Friends or relatives property",13826
+"capital","2014","other",2384
+"capital","2015","Hotels and similar",13972
+"capital","2015","Rented accommodation",1106
+"capital","2015","Caravan_commercial camping",594
+"capital","2015","Friends or relatives property",14151
+"capital","2015","other",2997
+"capital","2016","Hotels and similar",14241
+"capital","2016","Rented accommodation",1429
+"capital","2016","Caravan_commercial camping",582
+"capital","2016","Friends or relatives property",15012
+"capital","2016","other",3020
+"capital","2017","Hotels and similar",15128
+"capital","2017","Rented accommodation",1524
+"capital","2017","Caravan_commercial camping",660
+"capital","2017","Friends or relatives property",15291
+"capital","2017","other",3239
+"capital","2018","Hotels and similar",16727
+"capital","2018","Rented accommodation",2078
+"capital","2018","Caravan_commercial camping",653
+"capital","2018","Friends or relatives property",16210
+"capital","2018","other",3620
+"capital","2019","Hotels and similar",18412
+"capital","2019","Rented accommodation",2538
+"capital","2019","Caravan_commercial camping",655
+"capital","2019","Friends or relatives property",17812
+"capital","2019","other",4553
+"capital","2020","Hotels and similar",13749
+"capital","2020","Rented accommodation",1900
+"capital","2020","Caravan_commercial camping",566
+"capital","2020","Friends or relatives property",14865
+"capital","2020","other",4198
+"capital","2021","Hotels and similar",8066
+"capital","2021","Rented accommodation",1356
+"capital","2021","Caravan_commercial camping",499
+"capital","2021","Friends or relatives property",11977
+"capital","2021","other",3410
+"capital","2022","Hotels and similar",9744
+"capital","2022","Rented accommodation",1445
+"capital","2022","Caravan_commercial camping",643
+"capital","2022","Friends or relatives property",11553
+"capital","2022","other",3799
+"capital","2023","Hotels and similar",18277
+"capital","2023","Rented accommodation",2167
+"capital","2023","Caravan_commercial camping",921
+"capital","2023","Friends or relatives property",15876
+"capital","2023","other",3949
+"capital","2024","Hotels and similar",19457
+"capital","2024","Rented accommodation",2385
+"capital","2024","Caravan_commercial camping",804
+"capital","2024","Friends or relatives property",16675
+"capital","2024","other",3377
+"regional","2001","Hotels and similar",14609
+"regional","2001","Rented accommodation",4417
+"regional","2001","Caravan_commercial camping",5364
+"regional","2001","Friends or relatives property",19413
+"regional","2001","other",9543
+"regional","2002","Hotels and similar",15147
+"regional","2002","Rented accommodation",4840
+"regional","2002","Caravan_commercial camping",5318
+"regional","2002","Friends or relatives property",19813
+"regional","2002","other",9540
+"regional","2003","Hotels and similar",15596
+"regional","2003","Rented accommodation",4838
+"regional","2003","Caravan_commercial camping",5390
+"regional","2003","Friends or relatives property",20967
+"regional","2003","other",9033
+"regional","2004","Hotels and similar",15324
+"regional","2004","Rented accommodation",4225
+"regional","2004","Caravan_commercial camping",5408
+"regional","2004","Friends or relatives property",21190
+"regional","2004","other",8894
+"regional","2005","Hotels and similar",15862
+"regional","2005","Rented accommodation",4379
+"regional","2005","Caravan_commercial camping",4718
+"regional","2005","Friends or relatives property",19664
+"regional","2005","other",8297
+"regional","2006","Hotels and similar",15360
+"regional","2006","Rented accommodation",4023
+"regional","2006","Caravan_commercial camping",4481
+"regional","2006","Friends or relatives property",18580
+"regional","2006","other",8948
+"regional","2007","Hotels and similar",15526
+"regional","2007","Rented accommodation",4666
+"regional","2007","Caravan_commercial camping",5130
+"regional","2007","Friends or relatives property",18879
+"regional","2007","other",8603
+"regional","2008","Hotels and similar",15716
+"regional","2008","Rented accommodation",4643
+"regional","2008","Caravan_commercial camping",5012
+"regional","2008","Friends or relatives property",18750
+"regional","2008","other",8272
+"regional","2009","Hotels and similar",14262
+"regional","2009","Rented accommodation",4699
+"regional","2009","Caravan_commercial camping",4865
+"regional","2009","Friends or relatives property",16774
+"regional","2009","other",7533
+"regional","2010","Hotels and similar",14325
+"regional","2010","Rented accommodation",4851
+"regional","2010","Caravan_commercial camping",5261
+"regional","2010","Friends or relatives property",16756
+"regional","2010","other",7593
+"regional","2011","Hotels and similar",14493
+"regional","2011","Rented accommodation",4786
+"regional","2011","Caravan_commercial camping",5273
+"regional","2011","Friends or relatives property",17268
+"regional","2011","other",7853
+"regional","2012","Hotels and similar",14888
+"regional","2012","Rented accommodation",4890
+"regional","2012","Caravan_commercial camping",5347
+"regional","2012","Friends or relatives property",18544
+"regional","2012","other",8848
+"regional","2013","Hotels and similar",14880
+"regional","2013","Rented accommodation",5063
+"regional","2013","Caravan_commercial camping",5706
+"regional","2013","Friends or relatives property",18504
+"regional","2013","other",9153
+"regional","2014","Hotels and similar",15016
+"regional","2014","Rented accommodation",5039
+"regional","2014","Caravan_commercial camping",5750
+"regional","2014","Friends or relatives property",19752
+"regional","2014","other",10696
+"regional","2015","Hotels and similar",16101
+"regional","2015","Rented accommodation",4778
+"regional","2015","Caravan_commercial camping",6150
+"regional","2015","Friends or relatives property",21267
+"regional","2015","other",11932
+"regional","2016","Hotels and similar",16681
+"regional","2016","Rented accommodation",5312
+"regional","2016","Caravan_commercial camping",6393
+"regional","2016","Friends or relatives property",21323
+"regional","2016","other",13238
+"regional","2017","Hotels and similar",17663
+"regional","2017","Rented accommodation",5432
+"regional","2017","Caravan_commercial camping",5940
+"regional","2017","Friends or relatives property",22981
+"regional","2017","other",13947
+"regional","2018","Hotels and similar",18486
+"regional","2018","Rented accommodation",6096
+"regional","2018","Caravan_commercial camping",6150
+"regional","2018","Friends or relatives property",24524
+"regional","2018","other",15535
+"regional","2019","Hotels and similar",20116
+"regional","2019","Rented accommodation",7116
+"regional","2019","Caravan_commercial camping",6599
+"regional","2019","Friends or relatives property",27289
+"regional","2019","other",17785
+"regional","2020","Hotels and similar",15451
+"regional","2020","Rented accommodation",5083
+"regional","2020","Caravan_commercial camping",5308
+"regional","2020","Friends or relatives property",22804
+"regional","2020","other",16259
+"regional","2021","Hotels and similar",16807
+"regional","2021","Rented accommodation",7210
+"regional","2021","Caravan_commercial camping",6754
+"regional","2021","Friends or relatives property",21976
+"regional","2021","other",17537
+"regional","2022","Hotels and similar",16000
+"regional","2022","Rented accommodation",6394
+"regional","2022","Caravan_commercial camping",6229
+"regional","2022","Friends or relatives property",20498
+"regional","2022","other",17530
+"regional","2023","Hotels and similar",22546
+"regional","2023","Rented accommodation",7221
+"regional","2023","Caravan_commercial camping",7988
+"regional","2023","Friends or relatives property",25395
+"regional","2023","other",17510
+"regional","2024","Hotels and similar",22988
+"regional","2024","Rented accommodation",7820
+"regional","2024","Caravan_commercial camping",7684
+"regional","2024","Friends or relatives property",26386
+"regional","2024","other",15808
