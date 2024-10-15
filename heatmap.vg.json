@@ -1,0 +1,65 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/QuangHaTrieu/new_vis2/refs/heads/main/area.csv"},
+    "title": {"text": "Domestic trips in Australia 2001 - 2024",
+              "fontSize": 16,
+              "font": "Arial"},
+    "vconcat": [{
+      "width": 250,
+      "height": 250,
+      "mark": "rect",
+    "encoding": {
+      "x": {
+        "timeUnit": "year",
+        "field": "year",
+        "type": "temporal",
+        "title": "Year",
+        "axis": {
+          "title":null,
+          "format": "%Y",
+          "labelAngle": 90,
+          "labelOverlap": false
+        },
+        "scale": {"domain": {"param": "brush"}}
+      },
+      "color": {
+        "field": "trips",
+        "type": "quantitative",
+        "title": "Trips ('000)"
+      },
+      "y": {
+        "field": "Region",
+        "type": "nominal",
+        "title": "Region"
+      }, 
+      "tooltip": [{"field": "year", "type": "ordinal", "title":"Year"},
+                  {"field": "trips", "type": "quantitative", "title": "number of trips"}] 
+    }
+    }, {
+      "width": 250,
+      "height": 100,
+      "mark": "area",
+      "transform": [
+        {
+          "aggregate": [{"op": "sum", "field": "trips", "as": "total"}],
+          "groupby": ["year"]
+        }
+      ],
+      "params": [{
+        "name": "brush",
+        "select": {"type": "interval", "encodings": ["x"]}
+      }],
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "total",
+          "type": "quantitative",
+          "axis": {"tickCount": 3, "grid": false, "title": "Trips('000)"}
+        }
+      }
+    }
+    ]
+  }

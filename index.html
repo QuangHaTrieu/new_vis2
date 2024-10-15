@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Tourism in Australia from 2001 - 2024 </title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+  <!--Import javacript-->
+  <script src="vis.js"></script>
+
+</head>
+
+<body>
+
+  <div class="page">
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1" style="background-color: lightgray">
+        <h1>Tourism in Australia from 2001 to 2024</h1>
+        <p style="margin-left: 200px">This page demonstrates the number of trips and nights at different regions in Australia from 2001 to 2024</p>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+        <!--First row, line chart-->
+      <div class="pure-u-1-3">
+        <div id="heat" class="vis-container"></div>
+      </div>
+
+      <div class="pure-u-1-3">
+        <div class="description description-left">
+          <h2 style="font-size: 16px; font-family: Arial, Helvetica, sans-serif;">Tourism in Australia from 2001 to 2024</h2>
+          <p style="font-size: 14px"> Australia’s tourism industry is one of the key
+             economic drivers, contributing dramatically to the GDP and creating numerous
+              jobs. These countries provide not only natural wonders but also cultural 
+              experiences. The sector is recovering well after the COVID-19 period.
+              Domestic Tourism accounts for the largest part of this industry, which
+              means that most visitors are Australians.
+          </p>
+
+          <p style="font-size: 14px"> The area chart and the heatmap show that the number of
+             trips to different states in Australia, in particular, and to the whole of 
+             Australia, in general, has been increasing over time. The area chart clearly
+              shows a significant drop around 2019 to 2022, caused by the covid and social 
+              isolation. However, after COVID, domestic tourists started to revisit different
+              places in Australia, it is demonstrated by the local upward trend from 2022 until now. 
+         </p>
+
+         <p style="font-size: 14px"> 
+          The Donut chart illustrates that “Friends or relatives property” and “Hotels and similar”
+          are always the most popular accommodation choices. While there is a more even distribution
+          among different types of accommodation in regions, there is a distinctive difference between
+          different accommodation types in capital cities such as Melbourne and Sydney. 
+           
+      </p>
+
+
+      
+        </div>
+      </div>
+
+      <div class="pure-u-1-3">
+        <div id="donut" class="vis-container"></div>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+        <!--map-->
+        <div class="pure-u-2-3">
+            <div id="map" class="vis-container"></div>
+        </div>
+
+        <!--Text-->
+        <div class="pure-u-1-3">
+            <div>
+                <h2 style="font-size: 16px; font-family: Arial, Helvetica, sans-serif">Where do domestic visitors visit the most? </h2>
+                <p style="font-size: 14px">The map shows that most trips come to coastal regions, with the eastern and southern 
+                  areas being the most popular destinations. In detail, among Australia’s states, Victoria and New South Wales
+                   stand out as the most tourist attraction locations, reflecting the attractiveness of major cities like Melbourne
+                    and Sydney. Coastal Queensland and a part of Western Australia also attract a moderate number of tourists, but 
+                    it is less than in southeast regions. In contrast, as we move inland, central Australia and the Northern Territory
+                     attract much fewer trips, reflecting these regions' unpopularity as domestic tourism destinations. .</p>
+            </div>
+
+            <div>
+              <img src="data/image.jpg" alt="scene" width="420" height="210">
+            </div>
+        </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <!--slope-->
+    <div class="pure-g">
+        <div class="pure-u-1-3">
+            <div id="slope" class="vis-container"></div>
+        </div>
+
+        <div class="pure-u-1-3">
+          <div class="description description-left">
+              <h2 style="font-size: 16px; font-family: Arial, Helvetica, sans-serif;">Why Australian residents visit these regions</h2>
+              <p style="font-size: 14px;">In 2024, most domestic tourists visit different regions in Australia to visit friends and relatives.
+                The number of trips for this purpose varies significantly among various states. The parallel plot shows that the number of trips
+                for this purpose is highest in New South Wales, followed by Victoria. On the contrary, Business trips consistently have the 
+                lowest number among all regions, reflecting that the most common reasons for domestic travel are leisure and social. </p>
+          </div>
+
+          <div style="margin-left: 30px;">
+            <img src="data/image2.jpg" alt="scene" width="340" height="180">
+          </div>
+      </div>
+
+         <!--slope chart-->
+        <div class="pure-u-1-3">
+          <div id="parallel" class="vis-container"></div>
+        </div>
+    </div>
+
+    <!-- end pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1 small-font">
+        <p>This visualisation is about Australia Tourism Industry created by Quang Ha Trieu. The datasource is <a href="https://www.tra.gov.au/content/dam/austrade-assets/global/wip/tra/documents/nvs/tra-nvs-trends-onight-purpose-ye-jun-24.xlsx" target=" _blank">Tourism trend in Tourism Research Australia Website</href>.</p>
+      </div>
+    </div>
+  </div> <!-- end page -->
+</body>
+
+</html>

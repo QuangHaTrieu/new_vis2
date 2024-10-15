@@ -1,0 +1,129 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Parallel coordinates plot for travel purposes across different Australian states/territories.",
+    "data": {
+      "url": "https://raw.githubusercontent.com/QuangHaTrieu/new_vis2/refs/heads/main/region.csv"
+    },
+    "params": [
+        {
+          "name": "state_selection",
+          "bind": {
+            "input": "select",
+            "options": [
+              null,
+              "NSW",
+              "VIC",
+              "QLD",
+              "SA",
+              "WA",
+              "TAS",
+              "NT"
+          ],
+          "labels":[
+            "Show All",
+            "New South Wales",
+            "Victoria",
+            "Queensland",
+            "South Australia",
+            "Western Australia",
+            "Tasmania", 
+            "Northern Territory"
+  ],
+          "name": "State Selection: "
+        }
+  },{
+      "name": "yearFilter",
+      "value": 2001,
+      "bind": {
+        "input": "range",
+        "min": 2001,
+        "max": 2024,
+        "step": 1,
+        "name": "Select Year: "
+      }
+    }
+   ],
+    "width": 280,
+    "height": 300,
+    "title": {"text": "Trips by Region in Australia 2001 - 2024",
+              "fontSize": 16,
+              "font": "Arial"},
+    "transform": [
+      {
+        "filter": "(state_selection == null || datum.state == state_selection) &&  (datum.year == yearFilter)"},
+      {
+        "calculate": "'New South Wales is; the state attracting; the most tourists.'",
+        "as": "raw_annotation_1"},
+      {"calculate": "split(datum.raw_annotation_1, ';')",
+        "as": "annotation_1"},
+      {
+        "calculate": "'Significant differences in; trips among areas; in New South Wales; Victoria and Queensland'",
+        "as": "raw_annotation_2"},
+      {"calculate": "split(datum.raw_annotation_2, ';')",
+        "as": "annotation_2"}
+    ],
+    "layer": [
+      {
+        "mark": {"type": "rule", "color": "#2e2a2a"},
+        "encoding": {
+          "x": {"field": "type", "type": "nominal"}
+        }
+      },
+      {
+        "mark": {"type":"line", "point": true},
+        "encoding": {
+          "color": {"field": "state", "type": "nominal", "title": "state",
+          "scale": {
+                        "domain": [
+                            "NSW",
+                            "VIC",
+                            "QLD",
+                            "SA",
+                            "WA",
+                            "TAS",
+                            "NT"
+                        ], "range": [
+                            "#1b9e77",
+                            "#d95f02",
+                            "#7570b3",
+                            "#e7298a",
+                            "#66a61e",
+                            "#e6ab02",
+                            "#a6761d"
+                            ] }
+        },
+          "x": {"type": "nominal", "field": "type", "title": "Region"},
+          "y": {"type": "quantitative", "field": "trips", "title": "Trips('000)"},
+          "tooltip": [
+            {"field": "state", "type": "nominal"},
+            {"field": "type", "type": "nominal"},
+            {"field": "trips", "type": "quantitative"}
+          ]
+        }
+      },
+      {"mark": {
+        "type": "text",
+        "fontSize": 12,
+        "font": "Open Sans",
+        "align":"left",
+        "dx": -120,
+        "dy": -100,
+        "baseline": "middle"},
+      "encoding": {"text": {"field": "annotation_1"}}
+      },
+      {"mark": {
+        "type": "text",
+        "fontSize": 12,
+        "font": "Open Sans",
+        "align":"left",
+        "dx": 0,
+        "dy": 20,
+        "baseline": "middle"},
+      "encoding": {"text": {"field": "annotation_2"}}
+      }
+    ],
+    "config": {
+      "axisX": {"domain": false, "labelAngle": 0, "tickColor": "#ccc", "title": "Region"},
+      "view": {"stroke": null}
+    }
+  }

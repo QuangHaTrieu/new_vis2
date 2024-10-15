@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {"text": "Where domestic visitors stayed from 2001 to 2024",
+            "fontSize": 16,
+            "font": "Arial"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/QuangHaTrieu/new_vis2/refs/heads/main/type.csv"
+  },
+   "params": [
+    {
+      "name": "yearFilter",
+      "value": 2001,
+      "bind": {
+        "input": "range",
+        "min": 2001,
+        "max": 2024,
+        "step": 1,
+        "name": "Select Year: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum.year == yearFilter"}
+  ],
+  "facet": {
+    "row": {"field": "Regions", "type": "nominal"}
+  },
+  "spec": {
+    "height": 200,
+    "width": 200,
+    "mark": {"type": "arc", "innerRadius": 50, "outerRadius": 100},
+    "encoding": {
+      "theta": {"field": "trips", "type": "quantitative", "stack": true},
+      "color": {
+        "field": "purpose",
+        "type": "nominal",
+        "title": "Accommodation",
+        "scale": {
+          "domain": [
+            "Hotels and similar",
+            "Rented accommodation",
+            "Caravan_commercial camping",
+            "Friends or relatives property",
+            "other"
+          ],
+          "range": [
+            "#1f77b4",
+            "#ff7f0e", 
+            "#9467bd",  
+            "#8c564b",  
+            "#e377c2"   
+          ]
+        }},
+      "tooltip": [
+        {"field": "purpose", "type": "nominal", "title": "Purpose"},
+        {"field": "trips", "type": "quantitative", "title": "Number of trips"},
+        {"field": "year", "type": "ordinal", "title":"Year"},
+        {"field": "proportion", "type": "quantitative", "title": "Porpotion(%)"}
+      ]
+    }
+  },
+  "resolve": {
+    "scale": {"color": "independent"}
+  },
+  "config": {
+    "facet": {"columns": 1}
+  }
+}

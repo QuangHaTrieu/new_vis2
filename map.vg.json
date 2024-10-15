@@ -1,0 +1,171 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 620,
+    "height": 400,
+    "title": {"text": "The number of trips and nights stay at each state and territory in March 2024",
+              "font": "Arial",
+              "fontSize": 16},
+    "params": [
+      {
+        "name": "yearFilter",
+        "value": 2001,
+        "bind": {
+          "input": "range",
+          "min": 2001,
+          "max": 2024,
+          "step": 1,
+          "name": "Select Year: "
+        }
+      },
+      {
+        "name": "state_selection",
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "NSW",
+            "VIC",
+            "QLD",
+            "SA",
+            "WA",
+            "TAS",
+            "NT"
+          ],
+          "labels": [
+            "Show All",
+            "New South Wales",
+            "Victoria",
+            "Queensland",
+            "South Australia",
+            "Western Australia",
+            "Tasmania", 
+            "Northern Territory"
+          ],
+          "name": "State Selection: "
+        }
+      }
+    ]
+    ,
+    "projection": {"type": "equirectangular"},
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/QuangHaTrieu/new_vis2/refs/heads/main/ne_110m_admin_0_countries%2023.18.43.json",
+          "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+        },
+        "mark": {"type": "geoshape", "fill": "lightgrey", "stroke": "white"}
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/QuangHaTrieu/new_vis2/refs/heads/main/ne_110m_ocean.json",
+          "format": {"type": "topojson", "feature": "ne_110m_ocean"}
+        },
+        "mark": {"type": "geoshape", "fill": "skyblue"}
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/QuangHaTrieu/new_vis2/refs/heads/main/ne_110m_graticules_30.json",
+          "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
+        },
+        "mark": {"type": "geoshape", "fill": null, "stroke": "lightslategray"}
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/QuangHaTrieu/new_vis2/refs/heads/main/newmap.csv"
+        }, "transform": [
+        {"filter": "(datum.year == yearFilter) && (state_selection == null || datum.state == state_selection)"},
+        {
+            "calculate": "'Most of the popular tourist attractions; in Australia are located near the sea.'",
+            "as": "raw_annotation_1"},
+          {"calculate": "split(datum.raw_annotation_1, ';')",
+            "as": "annotation_1"},
+          {
+            "calculate": "'Victoria and New South Wales; are the top destination for domestic; tourists in Australia from 2001 to 2024'",
+            "as": "raw_annotation_2"},
+          {"calculate": "split(datum.raw_annotation_2, ';')",
+            "as": "annotation_2"}
+      ],
+        "layer": [
+          {"mark": {"type": "circle", "opacity": 1.0},
+          "encoding": {
+            "longitude": {"field": "longitude", "type": "quantitative"},
+            "latitude": {"field": "latitude","type": "quantitative"},
+            "size": {
+              "field": "night",
+              "type": "quantitative",
+              "title": " number of nights ('000)"
+            },
+            "color": {
+              "field": "trips",
+              "type": "quantitative",
+              "title": "Number of trips ('000)",
+              "scale": {"type": "threshold",
+                       "domain": [2000, 4000, 6000, 8000],
+                      "range": ["#fb6a4a","#ef3b2c", "#cb181d",  "#a50f15", "#67000d"]}
+            },
+            "tooltip": [
+              {"field": "state", "type": "nominal", "title": "State"},
+              {"field": "Area", "type": "nominal"},
+              {"field": "year", "type": "ordinal", "title": "Year"},
+              {"field": "trips", "type": "quantitative", "title": "Number of trips('000)"},
+              {"field": "night", "type": "quantitative", "title": "Number of night('000)"}
+            ]
+          }},
+        {"mark": {
+          "type": "text",
+          "fontSize": 12,
+          "font": "Open Sans",
+          "align":"left",
+          "dx": -120,
+          "dy": -100,
+          "baseline": "middle"},
+        "encoding": {"text": {"field": "annotation_1"}}
+        },
+        {"mark": {
+          "type": "text",
+          "fontSize": 12,
+          "font": "Open Sans",
+          "align":"left",
+          "dx": 0,
+          "dy": -40,
+          "baseline": "middle"},
+        "encoding": {"text": {"field": "annotation_2"}}
+        },
+        {"mark": {
+            "type": "text",
+            "fontSize": 12,
+            "font": "Open Sans",
+            "align":"left",
+            "dx": -180,
+            "dy": 200,
+            "baseline": "middle"},
+          "encoding": {"text": {"value": "120"}}
+        },
+        {"mark": {
+            "type": "text",
+            "fontSize": 12,
+            "font": "Open Sans",
+            "align":"left",
+            "dx": 190,
+            "dy": 200,
+            "baseline": "middle"},
+          "encoding": {"text": {"value": "150"}}
+        },
+        {"mark": {
+            "type": "text",
+            "fontSize": 12,
+            "font": "Open Sans",
+            "align":"left",
+            "dx": -260,
+            "dy": 25,
+            "baseline": "middle"},
+          "encoding": {"text": {"value": "-30"}}
+        }
+
+        ]
+      }
+  
+    ],
+    "config": {}
+  }
+  
